@@ -4,12 +4,12 @@ An overview:
 
 ```mermaid
 graph overview;
-    cellranger raw-->emptyDrops;
-    dnbelab raw-->emptyDrops;
-    cellranger raw-->cellBender;
-    dnbelab raw-->cellBender;
-    emptyDrops-->scrublet;
-    cellBender-->scrublet
+    cr_raw[(cellranger raw)]-->eD[emptyDrops];
+    dnbe_raw[(dnbelab raw)]-->eD;
+    cr_raw-->cb[cellBender];
+    dnbe_raw-->cb;
+    eD-->scrublet;
+    cb-->scrublet
 ```
 
 ## Folder structure
