@@ -1,15 +1,28 @@
-# For $/beta$ test of Dnbelab and compared with 10x V3
+# For $/b$ test of Dnbelab and compared with 10x V3
 
 An overview:
 
 ```mermaid
 flowchart LR;
-    cr_raw[(cellranger raw)]-->eD[emptyDrops];
-    dnbe_raw[(dnbelab raw)]-->eD;
-    cr_raw-->cb[cellBender];
+    subgraph preprocess
+    cr_raw[(cellranger raw)]-.->eD[\emptyDrops\];
+    dnbe_raw[(dnbelab raw)]-.->eD;
+    cr_raw-->cb[\cellBender\];
     dnbe_raw-->cb;
-    eD-->scrublet;
-    cb-->scrublet
+    eD-.->scb[\scrublet\];
+    cb-->scb;
+    scb-->cr_filter[(cellranger filtered)];
+    scb-->dnbe_filter[(dnbelab filtered)]
+    end
+    subgraph integrate
+    cr_filter-->scVI[\scVI\]
+    dnbe_filter-->scVI
+    end
+    subgraph downstream
+    scVI-->scanpy["`cell type
+    features analysis
+    variance analysis`"]
+    end
 ```
 
 ## Folder structure
