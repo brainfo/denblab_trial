@@ -38,6 +38,14 @@ with the same parameters for EmptyDrops,
 - dnbelab retain double the number of nuclei
 - but those more retained nuclei are with less gene numbers
 
+### Questions
+
+Are these more retained nuclei are good biological samplings from the tissue?  
+in terms of cell type identity first  
+This lead to our next step:
+
 ## Next step
 
-integrate matrices from both platforms with scVI
+- clustering and viriance analysis
+- cell type markers
+- integrate matrices from both platforms with scVI
