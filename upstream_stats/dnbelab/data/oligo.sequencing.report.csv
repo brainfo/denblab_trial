@@ -1,0 +1,11 @@
+Number of Fragments,132729966
+Fragments pass QC,127077012
+Fragments Filtered on Low Quality,4470
+Fragments with Failed Barcodes,5648484
+Fragments too short after Adapter Trimming,0
+Fragments with Exactly Matched Barcodes,119922574
+Fragments with Adapter,0.00%
+Q30 bases in Cell Barcode,98.17%
+Q30 bases in Sample Barcode,0.0%
+Q30 bases in UMI,0.00%
+Q30 bases in Reads,98.00%
