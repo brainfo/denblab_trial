@@ -3,7 +3,7 @@
 An overview:
 
 ```mermaid
-graph overview;
+flowchart LR;
     cr_raw[(cellranger raw)]-->eD[emptyDrops];
     dnbe_raw[(dnbelab raw)]-->eD;
     cr_raw-->cb[cellBender];
