@@ -1,4 +1,4 @@
-# For $/b$ test of Dnbelab and compared with 10x V3
+# For $\beta$ test of Dnbelab and compared with 10x V3
 
 An overview:
 
