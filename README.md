@@ -31,6 +31,13 @@ flowchart LR;
 /h5_input: h5 matrices from calling cell with EmptyDrops or Cellbender + cellranger count or dnbelab run  
 /h5_analysis: general qc before and after scrublet
 
+## Temporary summary
+
+with the same parameters for EmptyDrops,
+
+- dnbelab retain double the number of nuclei
+- but those more retained nuclei are with less gene numbers
+
 ## Next step
 
 integrate matrices from both platforms with scVI
